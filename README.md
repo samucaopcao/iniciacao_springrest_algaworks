@@ -9,7 +9,7 @@
 ![image](https://user-images.githubusercontent.com/59769434/111009831-7148b480-8373-11eb-8d01-d21a544d9ff2.png)
 
 </br>
-<h2>Aula 01 - Introdução</h2>
+<h2>Aula 01 - Implementando uma API REST com Spring</h2>
 
 - 1 - Criação da Classe ClienteController (Classe responsável por receber e responder requisição);
 - 2 - Criação de Classe Cliente (Classe de dominio , sendo um modelo de cliente);
@@ -20,6 +20,15 @@
  
 		<groupId>com.fasterxml.jackson.dataformat</groupId>
 		<artifactId>jackson-dataformat-xml</artifactId>
+		
+<h2>Aula 02 - Persistência, Bean Validation e Exception Handler</h2>
+- :construction: Em construção...
+
+<h2>Aula 03 - Técnicas e Boas Práticas</h2>
+- :construction: Em construção...
+
+<h2>Aula 04 - Alcançando o próximo nível</h2>
+- :construction: Em construção...
 
 
 - 🚶🚶🚶 ...Estamos caminhando.
