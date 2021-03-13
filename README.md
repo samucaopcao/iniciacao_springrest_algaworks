@@ -2,6 +2,7 @@
 
 
 - :mortar_board: Este repositório baseia-se no curso de iniciação ao Spring REST ministrado pelo prof.Alex da AlgaWorks.
+- :construction: Foi utilizado para construção as seguintes ferramentas: JDK 11, STS, Postman.
 - :memo: Será realizada uma pequena API seguindo o esboço UML abaixo:
 
 
