@@ -45,7 +45,7 @@ Aula 02 - Introdução
 
 Após inserção do FlyWay devemos criar em src/main/resources a pasta db e dentro desta a pasta migration (nela são salvas nossos scripts para criação do nosso banco e alterações)<br> 
 
-De stop na aplicação para criarmos o nosso primeiro arquivo atentando-se para a convenção onde o nome do arquivo começa com V de versão seguindo do numero da versão seguido de dois underline e uma descrição EX.: V001__cria-tabela-cliente.sql
+De stop na aplicação para criarmos o nosso primeiro arquivo atentando-se para a convenção onde o nome do arquivo começa com V de versão seguindo do número da versão seguido de dois underline e uma descrição EX.: V001__cria-tabela-cliente.sql
  
  
 ![image](https://user-images.githubusercontent.com/59769434/111552628-80f43e80-8761-11eb-97ae-0f45654f3c93.png)
@@ -53,7 +53,7 @@ De stop na aplicação para criarmos o nosso primeiro arquivo atentando-se para 
  
 
 <br>
-Editando esse arquivo abrindo como arquivo de texto (clique com o botão direito > open with) colocaremos a query que criará o banco de dados caso ele não exista:
+Editando esse arquivo abrindo-o como arquivo de texto (clique com o botão direito > open with > Text Editor) colocaremos a query que criará o banco de dados caso ele não exista:
 CREATE TABLE cliente
 (
 id BIGINT NOT NULL AUTO_INCREMENT,
