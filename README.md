@@ -70,7 +70,13 @@ Após o término nosso banco ficará assim:
 
 ![image](https://user-images.githubusercontent.com/59769434/111552609-746fe600-8761-11eb-8ef8-9321a109e32e.png)
 
- 
+O JAKARTA PERSISTENCE (antigamente chamado de Jakarta Persistence API = JPA) é uma API para Mapeamento de Objeto Relacional (ORM) 
+Hibernate é uma implementação do JPA.
+Spring Data JPA não é uma implementação do JPA é apenas uma biblioteca para criar Repositories
+Realizaremos agora o mapeamento da classe cliente (ligaremos ela ao banco de dados com as anotações)
+
+Para debugar podemos colocar no aplication.properties o seguinte código spring.jpa.show-sql=true o qual mostrará no log o código SQL.
+
 
 
 
