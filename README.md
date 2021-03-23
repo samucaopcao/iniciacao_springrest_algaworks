@@ -104,7 +104,7 @@ FOREIGN KEY (cliente_id) REFERENCES cliente (id);
 Assim criaremos um arquivo no diretório db/migration , para que o Script não seja executado criaremos com um nome fora do padrão (sem iniciar com V ...), após inserir a querie acima citada, podemos renomeá-lo corretamente.(V003__cria-tabela-ordem-servico.sql)
 <br><br>
 
-<h2> RESUMINDO:</h2>
+<h3> RESUMINDO:</h3>
 <br><br>
 1 – Criar classe model OrdemServico com atributos e anotações (
 @id, @GeneratedValue(strategy = GenerationType.IDENTITY), @ManyToOne, @Enumerated(EnumType.STRING);
