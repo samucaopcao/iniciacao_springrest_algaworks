@@ -107,7 +107,7 @@ Assim criaremos um arquivo no diretório db/migration , para que o Script não s
 <h3> RESUMINDO:</h3>
 <br><br>
 1 – Criar classe model OrdemServico com atributos e anotações (
-@id, @GeneratedValue(strategy = GenerationType.IDENTITY), @ManyToOne, @Enumerated(EnumType.STRING);
+@id, @GeneratedValue(strategy = GenerationType.IDENTITY), @ManyToOne, @Enumerated(EnumType.STRING), @NotNull, @NotBlank;
 <br><br>
 2 – Criar interface repository OrdemServicoRepository (posteriormente acrescentar métodos de busca);
 <br><br>
@@ -117,6 +117,7 @@ Assim criaremos um arquivo no diretório db/migration , para que o Script não s
 <br><br>
 5 – Criar a Classe controladora  OrdemServicoController colocando as anotações :
 <br><br>
+@Valid (Para validar que os campos não venham nulos ou vazios);<br>
 @RequestController (Para marcar a classe como controladora);<br>
 @RequestMapping(“/ordens-servico”) – Para determinarmos o caminho padrão do nosso EndPoint;<br>
 @AutoWired ao criar a injeção de dependência ao criar o private GestaoOrdemServicoService gestaoOrdemServicoService;<br>
