@@ -124,10 +124,8 @@ Assim criaremos um arquivo no diretório db/migration , para que o Script não s
 @ResponseStatus(HttpStatus.CREATED) informa o status de criação após a anotação acima<br>
 <br><br>
 Criar uma nova pasta para requisições no Postman, sem esquecer de alterar o endereço do EndPoint.
-
-![image](https://user-images.githubusercontent.com/59769434/112074838-ee371380-8b55-11eb-9559-df1b8c88efd7.png)
-
-
+<br>
+![image](https://user-images.githubusercontent.com/59769434/112075022-5e459980-8b56-11eb-9582-9bc6108f7974.png)
 
 <h2>Aula 04 - Alcançando o próximo nível</h2>
 - :construction: Em construção...
