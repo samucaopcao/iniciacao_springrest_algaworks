@@ -116,6 +116,7 @@ Assim criaremos um arquivo no diretório db/migration , para que o Script não s
 4 – Criar a Classe de serviço GestaoOrdemService criando os serviços de criação de uma ordem de serviço, porém para isso devemos injetar a dependência (@Autowired) criando uma instancia de ordemServicoRepository e uma de ordemServiço;
 <br><br>
 5 – Criar a Classe controladora  OrdemServicoController colocando as anotações :
+<br><br>
 @RequestController (Para marcar a classe como controladora);<br>
 @RequestMapping(“/ordens-servico”) – Para determinarmos o caminho padrão do nosso EndPoint;<br>
 @AutoWired ao criar a injeção de dependência ao criar o private GestaoOrdemServicoService gestaoOrdemServicoService;<br>
