@@ -125,7 +125,8 @@ Assim criaremos um arquivo no diretório db/migration , para que o Script não s
 <br><br>
 Criar uma nova pasta para requisições no Postman, sem esquecer de alterar o endereço do EndPoint.
 <br>
-![image](https://user-images.githubusercontent.com/59769434/112075022-5e459980-8b56-11eb-9582-9bc6108f7974.png)
+![image](https://user-images.githubusercontent.com/59769434/112075050-73bac380-8b56-11eb-87a2-30691c8725f1.png)
+
 
 <h2>Aula 04 - Alcançando o próximo nível</h2>
 - :construction: Em construção...
