@@ -128,6 +128,14 @@ Criar uma nova pasta para requisições no Postman, sem esquecer de alterar o en
 <br><br>
 
 ![image](https://user-images.githubusercontent.com/59769434/112075254-e9bf2a80-8b56-11eb-9956-f6ea2822a54d.png)
+<br><br>
+Representation Model = Ao realizar uma busca de todas as ordens de serviço ,por exemplo, podemos não querer mostrar alguma informação especifica, nesse método por exemplo:<br><br>
+@GetMapping("/{ordemServicoId}")<br>
+public ResponseEntity<OrdemServico> buscar(@PathVariable Long ordemServicoId) {<br>
+Optional<OrdemServico> ordemServico = ordemServicoRepository.findById(ordemServicoId); <br><br>
+Deste modo, criaremos a classe OrdemServicoModel a qual colocaremos apenas as propriedades que queremos que retornem no JSON, ou melhor, na resposta. 
+<br>
+Para facilitar usaremos a dependência Model Mapper para fazer a  ligação dos atributos entre a classe OrdemServico e a OrdemServicoModel
 
 
 <h2>Aula 04 - Alcançando o próximo nível</h2>
