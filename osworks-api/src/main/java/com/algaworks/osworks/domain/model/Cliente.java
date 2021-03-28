@@ -24,6 +24,7 @@ public class Cliente {
 	 * @@GeneratedValue ESSA ANOTAÇÃO SERVE PARA DETERMINAR QUAL A ESTRATÉGIA DE
 	 *                  CRIAÇÃO DO ID, NO CASO AUTO_INCREMENT
 	 */
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 
