@@ -81,10 +81,63 @@ Para debugar podemos colocar no aplication.properties o seguinte código spring.
 
 
 <h2>Aula 03 - Técnicas e Boas Práticas</h2>
-- :construction: Em construção...
+Criaremos as classes OrdemServico e o Enum StatusOrdemServico. Após esse passo usaremos as anotações necessárias e utilizaremos o script abaixo para a criação da tabela no banco de dados:
+<br><br>
 
-<h2>Aula 04 - Alcançando o próximo nível</h2>
-- :construction: Em construção...
+CREATE TABLE ordem_servico
+(
+id BIGINT NOT NULL AUTO_INCREMENT,
+cliente_id BIGINT NOT NULL,
+descricao TEXT NOT NULL,
+preco DECIMAL (10,2) NOT NULL,
+status VARCHAR(20) NOT NULL,
+data_abertura DATETIME NOT NULL,
+data_finalizacao DATETIME ,
+
+PRIMARY KEY (id)
+
+);
+
+ALTER TABLE ordem_servico ADD CONSTRAINT  fk_ordem_sevico_cliente
+FOREIGN KEY (cliente_id) REFERENCES cliente (id);
+<br><br>
+Assim criaremos um arquivo no diretório db/migration , para que o Script não seja executado criaremos com um nome fora do padrão (sem iniciar com V ...), após inserir a querie acima citada, podemos renomeá-lo corretamente.(V003__cria-tabela-ordem-servico.sql)
+<br><br>
+
+<h3> RESUMINDO:</h3>
+<br><br>
+1 – Criar classe model OrdemServico com atributos e anotações (
+@id, @GeneratedValue(strategy = GenerationType.IDENTITY), @ManyToOne, @Enumerated(EnumType.STRING), @NotNull, @NotBlank;
+<br><br>
+2 – Criar interface repository OrdemServicoRepository (posteriormente acrescentar métodos de busca);
+<br><br>
+3 – Criar um arquivo no diretório db/migration conforme descrito acima;
+<br><br>
+4 – Criar a Classe de serviço GestaoOrdemService criando os serviços de criação de uma ordem de serviço, porém para isso devemos injetar a dependência (@Autowired) criando uma instancia de ordemServicoRepository e uma de ordemServiço;
+<br><br>
+5 – Criar a Classe controladora  OrdemServicoController colocando as anotações :
+<br><br>
+@Valid (Para validar que os campos não venham nulos ou vazios);<br>
+@RequestController (Para marcar a classe como controladora);<br>
+@RequestMapping(“/ordens-servico”) – Para determinarmos o caminho padrão do nosso EndPoint;<br>
+@AutoWired ao criar a injeção de dependência ao criar o private GestaoOrdemServicoService gestaoOrdemServicoService;<br>
+@PostMapping – Para adicionar ou incluir alguma coisa<br>
+@ResponseStatus(HttpStatus.CREATED) informa o status de criação após a anotação acima<br>
+<br><br>
+Criar uma nova pasta para requisições no Postman, sem esquecer de alterar o endereço do EndPoint.
+<br><br>
+
+![image](https://user-images.githubusercontent.com/59769434/112075254-e9bf2a80-8b56-11eb-9956-f6ea2822a54d.png)
+<br><br>
+Representation Model = Ao realizar uma busca de todas as ordens de serviço ,por exemplo, podemos não querer mostrar alguma informação especifica, nesse método por exemplo:<br><br>
+@GetMapping("/{ordemServicoId}")<br>
+public ResponseEntity<OrdemServico> buscar(@PathVariable Long ordemServicoId) {<br>
+Optional<OrdemServico> ordemServico = ordemServicoRepository.findById(ordemServicoId); <br><br>
+Deste modo, criaremos a classe OrdemServicoModel a qual colocaremos apenas as propriedades que queremos que retornem no JSON, ou melhor, na resposta. 
+<br>
+Para facilitar usaremos a dependência Model Mapper para fazer a  ligação dos atributos entre a classe OrdemServico e a OrdemServicoModel
+
+Criamos classes de excessões, separamos responsabilidades entre outros pontos.
 
 </br></br>
 - 🚶🚶🚶 ...Estamos caminhando.
