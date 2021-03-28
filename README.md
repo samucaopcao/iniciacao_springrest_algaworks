@@ -137,9 +137,7 @@ Deste modo, criaremos a classe OrdemServicoModel a qual colocaremos apenas as pr
 <br>
 Para facilitar usaremos a dependência Model Mapper para fazer a  ligação dos atributos entre a classe OrdemServico e a OrdemServicoModel
 
-
-<h2>Aula 04 - Alcançando o próximo nível</h2>
-- :construction: Em construção...
+Criamos classes de excessões, separamos responsabilidades entre outros pontos.
 
 </br></br>
 - 🚶🚶🚶 ...Estamos caminhando.
