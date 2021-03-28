@@ -141,6 +141,7 @@ Criamos classes de excessões, separamos responsabilidades entre outros pontos.
 
 </br></br>
 <h4>Por Fim nossas requisições ficararam assim no PostMan:</h4>
+<h5>CLIENTES</h5>
 <br>
 1️⃣ - Clientes - Adicionar:
 POST:  http://localhost:8080/clientes
@@ -174,4 +175,54 @@ BODY: {
 "nome": "Vander Junior",
 "email": "Cin@gmail.com",
 "telefone": "11 7265-9039"}
+<br><br>
+
+<h5>ORDENS DE SERVIÇO</h5>
+<br>
+1️⃣ - Ordens de Servico - Adicionar:
+POST:  http://localhost:8080/ordens-servico
+<br>
+BODY:{
+"cliente":{
+    "id":5
+},
+"descricao": "Reparar tela de Notebook Dell. Cliente diz que imagem não aparece.",
+"preco": 509.90
+
+}
+<br><br>
+2️⃣ - Ordens de Servico - Finalizar:
+PUT:  http://localhost:8080/ordens-servico/1/finalizacao
+<br>
+BODY: NONE
+<br><br>
+3️⃣ - Ordens de Servico - Listar:
+GET:  http://localhost:8080/ordens-servico
+<br>
+BODY: NONE
+<br><br>
+
+4️⃣ - Ordens de Servico - Buscar:
+GET:  http://localhost:8080/ordens-servico/1
+<br>
+BODY: NONE
+<br><br>
+<h5>COMENTÁRIOS PARA ORDENS DE SERVIÇO</h5>
+<br>
+1️⃣ - Comentário - Adicionar:
+POST:  http://localhost:8080/ordens-servico/5/comentarios
+<br>
+BODY:{
+"descricao":"Problema no leitor do video-game."
+}
+<br><br>
+2️⃣ - - Comentário - Listar:
+GET:  http://localhost:8080/ordens-servico/1/comentarios
+<br>
+BODY: NONE
+<br><br>
+3️⃣ - Comentário - Buscar:
+GET:  http://localhost:8080/ordens-servico/1
+<br>
+BODY: NONE
 <br><br>
