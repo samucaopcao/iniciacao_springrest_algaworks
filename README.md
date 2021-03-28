@@ -149,24 +149,23 @@ BODY: {
 "nome": "Ormonde Junior",
 "email": "Cin@gmail.com",
 "telefone": "11 7265-9039"}
-
+<br>
 - Clientes - Deletar:
 DELETE:  http://localhost:8080/clientes/1
 <br>
 BODY: NONE
-
-
+<br>
 - Clientes - Listar:
 GET:  http://localhost:8080/clientes
 <br>
 BODY: NONE
-
+<br>
 
 - Clientes - Buscar:
 GET:  http://localhost:8080/clientes/1
 <br>
 BODY: NONE
-
+<br>
 
 - Clientes - Atualizar:
 PUT:  http://localhost:8080/clientes/1
@@ -175,3 +174,4 @@ BODY: {
 "nome": "Vander Junior",
 "email": "Cin@gmail.com",
 "telefone": "11 7265-9039"}
+<br>
