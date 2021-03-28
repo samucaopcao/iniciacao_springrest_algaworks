@@ -140,4 +140,38 @@ Para facilitar usaremos a dependência Model Mapper para fazer a  ligação dos 
 Criamos classes de excessões, separamos responsabilidades entre outros pontos.
 
 </br></br>
-- 🚶🚶🚶 ...Estamos caminhando.
+<h4>Por Fim nossas requisições ficararam assim no PostMan:</h4>
+<br>
+- Clientes - Adicionar:
+POST:  http://localhost:8080/clientes
+<br>
+BODY: {
+"nome": "Ormonde Junior",
+"email": "Cin@gmail.com",
+"telefone": "11 7265-9039"}
+
+- Clientes - Deletar:
+DELETE:  http://localhost:8080/clientes/1
+<br>
+BODY: NONE
+
+
+- Clientes - Listar:
+GET:  http://localhost:8080/clientes
+<br>
+BODY: NONE
+
+
+- Clientes - Buscar:
+GET:  http://localhost:8080/clientes/1
+<br>
+BODY: NONE
+
+
+- Clientes - Atualizar:
+PUT:  http://localhost:8080/clientes/1
+<br>
+BODY: {
+"nome": "Vander Junior",
+"email": "Cin@gmail.com",
+"telefone": "11 7265-9039"}
