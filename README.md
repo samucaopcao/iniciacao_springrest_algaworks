@@ -142,36 +142,36 @@ Criamos classes de excessões, separamos responsabilidades entre outros pontos.
 </br></br>
 <h4>Por Fim nossas requisições ficararam assim no PostMan:</h4>
 <br>
-- Clientes - Adicionar:
+1️⃣:Clientes - Adicionar:
 POST:  http://localhost:8080/clientes
 <br>
 BODY: {
 "nome": "Ormonde Junior",
 "email": "Cin@gmail.com",
 "telefone": "11 7265-9039"}
-<br>
-- Clientes - Deletar:
+<br><br>
+2️⃣:Clientes - Deletar:
 DELETE:  http://localhost:8080/clientes/1
 <br>
 BODY: NONE
-<br>
-- Clientes - Listar:
+<br><br>
+3️⃣:Clientes - Listar:
 GET:  http://localhost:8080/clientes
 <br>
 BODY: NONE
-<br>
+<br><br>
 
-- Clientes - Buscar:
+4️⃣:Clientes - Buscar:
 GET:  http://localhost:8080/clientes/1
 <br>
 BODY: NONE
-<br>
+<br><br>
 
-- Clientes - Atualizar:
+5️⃣:Clientes - Atualizar:
 PUT:  http://localhost:8080/clientes/1
 <br>
 BODY: {
 "nome": "Vander Junior",
 "email": "Cin@gmail.com",
 "telefone": "11 7265-9039"}
-<br>
+<br><br>
